@@ -29,9 +29,8 @@ var wakeDog = function(dogName="Byron", dogBreed="poodle") {
   }
 
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
-let result = []
+
 
 function exerciseDog(dogName, dogBreed){
-    result = routine.map(func => func(dogName, dogBreed))
-    return result
+    return routine.map(func => func(dogName, dogBreed))
   }
